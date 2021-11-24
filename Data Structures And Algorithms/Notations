@@ -1,0 +1,4 @@
+- Collision = when two keys return the same memory adress: look at the multiple ways to solve this later
+- Hash table speed is faster because index doesn't have to be iterated but goes straight to the index which changes
+time complexity from O(n) to O(1)
+- Amortized = Calculating the complexity of an algorithm
