@@ -1,4 +1,18 @@
 - Collision = when two keys return the same memory adress: look at the multiple ways to solve this later
+
+- Collission resolution = how to handel colissions
+
+- colission resolution java hashmap = iterates key's hashcode() and .equals() with every value, if equal is found, the new value replaces the old one, else new entry will be generated inside the map
+
 - Hash table speed is faster because index doesn't have to be iterated but goes straight to the index which changes
 time complexity from O(n) to O(1)
-- Amortized = Calculating the complexity of an algorithm
+
+- Amortized analysis = Calculating the average worst case complexity of an algorithm over a sequance of inputs
+
+- hashset = collection with unique values, is unordered, is not thread safe/async, has Remove Add and Contains, no key available can be iterated trough convert .toArray(), or using Iterator<string> i = names.iterator()
+then using i.next() callable trough  HashSet<String> names = new HashSet<String>(); names.add("text"); while(i.hasNext()){ System.out.println(i.next());}
+
+- hashmap = unordered dictionary with key value pair, is not thread safe/async, it can have one null as key value, and multiple null values, has a Put Get Remove and Replace command, can be used as : HashMap<Integer,String> names = new HashMap<Integer,String>(); names.put(1, "test1"); names.forEach((key, value)-> System.out.println(key + " = " + value));
+
+- hashtable = same as hashmap but doesn't allow null values or keys and is thread-safe/synchronous
+
