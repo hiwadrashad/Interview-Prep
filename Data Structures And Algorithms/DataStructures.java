@@ -1,5 +1,6 @@
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.List;
@@ -35,5 +36,37 @@ public class Whiteboard {
             System.out.println(entry.getKey() + " - " + entry.getValue());
         }
         names.forEach((key, value)-> System.out.println(key + " = " + value));
+    }
+
+    public static int test()
+    {
+        List<Integer> countlengths = new ArrayList<Integer>();
+        int currentlength = 0;
+        char[] chars = s.toCharArray();
+        List<Character> previouslyseencharacters = new ArrayList<Character>();
+        for(int i = 0; i < chars.length;i++ )
+        {
+           if(previouslyseencharacters.contains(chars[i]))
+           {
+               previouslyseencharacters = new List();
+               previouslyseencharacters.add(chars[i]);
+               countlengths.add(chars[i]);
+               currentlength = 0;
+               continue;
+           }
+           currentlength = currentlength + 1;
+           previouslyseencharacters.add(chars[i]);
+        }
+        countlengths.add(currentlength);
+        int returnanswer = 0;
+        for (int x = 0; x < countlengths.size(); x++)
+        {
+           if (previouslyseencharacters.get(x) > returnanswer)
+           {
+               returnanswer = previouslyseencharacters.get(x);
+           }
+            
+        }
+        return returnanswer;
     }
 }

@@ -16,3 +16,10 @@ then using i.next() callable trough  HashSet<String> names = new HashSet<String>
 
 - hashtable = same as hashmap but doesn't allow null values or keys and is thread-safe/synchronous
 
+- ∈ = left is element of right
+
+- [i+1,n] = Range starting from i+1 till n
+
+- ∑(i+1 n)  = Iteration starting from i+1 till n
+
+- O(∑ i=0 n−1 (∑ j=i+1 n (j−i)))=O(∑ i=0 n−1 2 (1+n−i)(n−i))=O(n^3) // find out where third iteration comes from
