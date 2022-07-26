@@ -24,7 +24,7 @@ class Solution {
     }
 }
 
-// time complexity is O(n2) space complexity is O(1)
+// time complexity is O(n²) space complexity is O(1)
 
 
 //Optimal
