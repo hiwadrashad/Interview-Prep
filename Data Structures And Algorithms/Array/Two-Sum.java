@@ -38,6 +38,7 @@ class Solution2 {
             }
             map.put(nums[i], i);
         }
+
         // In case there is no solution, we'll just return null
         return null;
     }

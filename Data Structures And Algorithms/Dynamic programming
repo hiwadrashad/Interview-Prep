@@ -1,0 +1,46 @@
+- dynamic programming is the use of storing previously calculated values without repeating the same calculation
+
+- there are three steps usually for dynamic programming: which exist of the following 
+1. recursion
+2. store also called (memoization)
+3. bottom up 
+
+fibonacci sequence is 1,1,2,3,4,8 the previously two sum is what the answer is at the given index
+
+example of non memoized but recursive function:
+
+def fib(n)
+ if n == 1 or n == 2:
+  result = 1
+  else:
+   result = fib(n-1) + fib(n-2)
+  return result
+
+time complexity = O(2ⁿ)
+
+example of memoized and recursive solution:
+
+
+def fib(n,memo)
+ if memo[n] != null:
+  return memo[n]
+ if n == 1 or n == 2:
+  result = 1
+  else:
+  result = fib(n-1) + fib(n-2)
+memo[n] = result
+return result
+
+
+example of bottom up fibonacci:
+
+def fib_botom_up(n)
+ if n == 1 or n == 2
+  return 1
+ bottom_up = new int[n + 1]
+ bottom_up[1] = 1
+ bottom_up[2] = 1
+ for i from 3 upto n:
+  bottom_up[i] = bottom_up[i - 1] + bottom_up[i - 2]
+ return bottom_up[n]
+  
