@@ -1,0 +1,23 @@
+// Given the root of a binary tree, return the inorder traversal of its nodes' values.
+
+class Solution {
+    public List<Integer> inorderTraversal(TreeNode root) {
+        List<Integer> ans = new ArrayList<>();
+        Stack<TreeNode> stck = new Stack<>();
+        
+        while(root != null || !stck.isEmpty())
+        {
+            while(root != null)
+            {
+                stck.push(root);
+                root = root.left;
+            }
+            root = stck.pop();
+            ans.add(root.val);
+            root = root.right;
+        }
+        
+        return ans;
+    }
+
+// space complexity of O(N) and time complexity of O(N²)

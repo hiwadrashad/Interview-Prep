@@ -35,4 +35,4 @@ class Solution {
     }
 }
 
-// big o space and time complexito of O(n)
+//space and time complexity of O(n)
